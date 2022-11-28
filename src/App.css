@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.continer {
+    width: 470px;
+    margin: 20px auto auto;
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ActivityInputForm__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ActivityInputForm__wrapperInput:nth-child(n+2) {
+    margin-left: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ActivityInputForm__input, .ActivityInputForm__button {
+    height: 40px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.ActivityInputForm__lable {
+    margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ActivityInputForm__button {
+    display: block;
+    width: 60px;
 }
+
+.ActivityInputForm__button:hover {
+    outline: 2px solid black;
+}
+
+.ActivityInputForm__button:active {
+    background-color: white;
+}
+
+/*AcnivityItem*/
+
+
+.AcnivityItem__item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.AcnivityItem__deleteItem {
+   border: none;
+   background-color: white;
+}
+
+.highlight_off:hover {
+    outline: 1px solid black;
+}
+
+.highlight_off:active {
+    background-color: gray;
+}
+
+/*ActivityList*/
+
+.ActivityList__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ActivityList__list {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
